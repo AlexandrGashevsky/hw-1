@@ -1,8 +1,8 @@
 function isValidParentheses(text) {
     const braces = text.split("");
-    let opening = [ '(']
-    let closing = [ ')']
-    let arr = []
+    const opening = [ '('];
+    const closing = [ ')'];
+    let arr = [];
     for (let i = 0; i < braces.length; i++) {
         if (opening.includes(braces[i])) {
             arr.push(braces[i])
